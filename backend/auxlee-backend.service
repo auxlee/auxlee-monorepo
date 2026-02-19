@@ -1,0 +1,14 @@
+[Unit]
+Description=Auxlee Audio Backend API
+After=network.target
+
+[Service]
+User=forge
+Group=forge
+WorkingDirectory=/home/forge/auxleeai/backend
+Environment="PATH=/home/forge/auxleeai/backend/venv/bin"
+ExecStart=/home/forge/auxleeai/backend/venv/bin/gunicorn -c gunicorn_config.py main:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
