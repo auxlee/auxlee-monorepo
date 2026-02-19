@@ -19,7 +19,7 @@ juce_add_plugin(AuxleeAudioPlugin
     COPY_PLUGIN_AFTER_BUILD TRUE
     PLUGIN_MANUFACTURER_CODE Auxl
     PLUGIN_CODE Axlp
-    FORMATS AU VST3 Standalone
+    FORMATS AU VST3 CLAP Standalone
     PRODUCT_NAME "Auxlee Audio Recorder"
 )
 
